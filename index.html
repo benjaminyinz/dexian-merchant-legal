@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>协议与隐私 · 得闲商家版</title>
+<style>:root{color-scheme:light;--ink:#242236;--muted:#655f75;--purple:#523cc0;--line:#dfdce8;--tint:#f5f3fa}
+*{box-sizing:border-box}
+html{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#fff;color:var(--ink);-webkit-text-size-adjust:100%}
+body{margin:0;font-size:1rem}
+a{color:var(--purple);text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible,.table-scroll:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+.bar{border-bottom:1px solid var(--line)}
+.bar-inner{max-width:66rem;margin:auto;padding:0 1.5rem;min-height:4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-size:1.05rem;font-weight:750;letter-spacing:.04em}
+nav a{display:inline-block;padding:.9rem .1rem;text-decoration:none;color:var(--muted)}
+nav a+a{margin-left:1rem}
+main,footer{width:min(100% - 3rem,46rem);margin-inline:auto}
+article{padding:clamp(2.5rem,7vw,5rem) 0 2rem}
+h1,h2,h3,p{white-space:pre-wrap;overflow-wrap:anywhere}
+h1{font-size:clamp(1.8rem,4.5vw,2.75rem);letter-spacing:-.025em;line-height:1.28;margin:0}
+.subtitle{color:var(--muted);font-size:1.04rem;line-height:1.5;margin:.65rem 0 1.8rem}
+p{line-height:1.85;margin:.8rem 0}
+p:empty{margin:0}
+h2{font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.48;margin:2.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid var(--line);scroll-margin-top:1rem}
+h3{font-size:1.08rem;line-height:1.5;margin:1.55rem 0 .5rem;scroll-margin-top:1rem}
+details{margin:1.3rem 0;background:var(--tint);border-radius:.45rem;padding:0 1rem}
+summary{padding:.8rem 0;font-weight:650;cursor:pointer;color:var(--purple)}
+.toc-links{margin:0;padding:0 0 .75rem;list-style:none}
+.toc-links a{display:block;padding:.38rem 0;line-height:1.55}
+.quick{display:inline-block;margin:0 0 .4rem}
+.table-scroll{overflow-x:auto;margin:1.1rem 0;max-width:100%}
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:.65rem .75rem;border:1px solid var(--line)}
+th{background:var(--tint)}
+td p,th p{line-height:1.65;margin:0}
+footer{border-top:1px solid var(--line);padding:1rem 0 2.5rem}
+footer a{display:inline-block;padding:.6rem 0}
+@media(max-width:35rem){
+  .bar-inner{padding:.35rem 1rem;gap:0 .8rem}
+  main,footer{width:calc(100% - 2rem)}
+  th,td{padding:.45rem .35rem}
+}
+@media print{
+  .bar,details,.quick,footer{display:none}
+  main{width:100%;max-width:none}
+  article{padding:0} h2,h3{break-after:avoid}
+  .table-scroll{overflow:visible} tr{break-inside:avoid}
+  a{color:inherit;text-decoration:none}
+}
+.bar{position:sticky;top:0;z-index:1;background:white}
+article,h2,h3{scroll-margin-top:6rem}
+article footer{width:100%;margin-top:2rem}
+.current-note{display:none}
+@supports selector(body:has(:target)){
+  body:not(:has(#privacy:target,#privacy :target)) #privacy,
+  body:has(#privacy:target,#privacy :target) #agreement{display:none}
+  body:not(:has(#privacy:target,#privacy :target)) nav a[href="#agreement"],
+  body:has(#privacy:target,#privacy :target) nav a[href="#privacy"]{color:var(--purple);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.42em}
+  body:not(:has(#privacy:target,#privacy :target)) nav a[href="#agreement"] .current-note,
+  body:has(#privacy:target,#privacy :target) nav a[href="#privacy"] .current-note{display:inline;position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+}
+</style>
+</head>
+
+<body>
+<header class="bar"><div class="bar-inner"><span class="brand">得闲商家版</span><nav aria-label="切换文档"><a href="#agreement">商户协议<span class="current-note">（当前）</span></a><a href="#privacy">隐私政策<span class="current-note">（当前）</span></a></nav></div></header>
+<main>
+<article id="agreement" aria-labelledby="agreement-title" tabindex="-1">
+<h1 data-para id="agreement-title"><strong>得闲商户入驻合作协议</strong></h1>
+<p data-para lang="en" class="subtitle">Dexian Merchant Onboarding &amp; Cooperation Agreement</p>
+<p data-para>本协议由 Euphonic Horizon Media Co., Limited（中国香港，下称“平台方”）与《商务确认单》所载在澳大利亚或新西兰依法经营的商户（下称“商户”）签订。商务确认单载明具体经营资料和商业参数，经授权当地合作方仅提供拓展、培训或客户支持，不因参与服务当然成为本协议合同方、资金收款方或结算义务人。</p>
+<details><summary>章节目录</summary><ul class="toc-links"><li><a href="#agreement-section-1">第一章  定义、合同主体与业务模式</a></li>
+<li><a href="#agreement-section-2">第二章  商户准入、实名核验及账号管理</a></li>
+<li><a href="#agreement-section-3">第三章  商品上架、定价、有效期与宣传</a></li>
+<li><a href="#agreement-section-4">第四章  核销、交付与消费者投诉</a></li>
+<li><a href="#agreement-section-5">第五章  资金流、佣金、GST及结算</a></li>
+<li><a href="#agreement-section-6">第六章  退款、拒付、过期券及官方补贴</a></li>
+<li><a href="#agreement-section-7">第七章  用户数据、隐私与信息安全</a></li>
+<li><a href="#agreement-section-8">第八章  商户品牌授权、保密与知识产权</a></li>
+<li><a href="#agreement-section-9">第九章  违规处理、合理审查及责任分配</a></li>
+<li><a href="#agreement-section-10">第十章  协议期限、变更、退出与存量券</a></li>
+<li><a href="#agreement-section-11">第十一章  争议解决与一般条款</a></li>
+<li><a href="#agreement-section-12">附录A    澳新差异与法定权利</a></li></ul></details>
+<h2 data-para id="agreement-section-1"><strong>第一章  定义、合同主体与业务模式</strong></h2>
+<p data-para><strong>1.1 定义：</strong>“得闲消费者端”指用户浏览及购买团购券的客户端；“得闲商家版”指商户门店、商品、核销、员工权限及对账工具；“团购券”指订单对应的电子使用权益；“有效核销”指有凭证且对应真实履约的券核销；“商务确认单”指双方签署或经可追溯电子确认的具体商业条件。</p>
+<p data-para><strong>1.2 合同与交易结构：</strong>本协议平台签约和统一收款主体为 Euphonic Horizon Media Co., Limited。消费者通过“得闲 App”购买团购券，平台通过其实际使用的第三方支付服务商统一收款，合作商户按照商品说明提供线下商品或服务；平台与商户按有效核销及双方《商务确认单》约定结算。订单的供应方、GST处理和税务凭证须以真实交易及法律义务确定，商业安排不能剥夺消费者依法享有的权利。</p>
+<p data-para><strong>1.3 当地合作方：</strong>经平台授权的澳大利亚或新西兰本地服务机构可负责拓展、培训、商户维护、投诉协调等，但不当然有权以平台方名义改变费率、承诺退款或收取商户资金；新增签约方或代理授权须以书面确认为准。</p>
+<p data-para><strong>1.4 文件关系：</strong>本协议及双方确认的《商务确认单》组成商户B2B合作文件；《商务确认单》仅对特定商业参数优先，不能覆盖适用法律或消费者不可排除的权利。普通用户适用独立统一发布的《得闲 App 用户服务协议》与《得闲隐私政策》；商家版经营者、管理员、核销员等自然人的个人信息适用独立《得闲商家版隐私政策》。</p>
+<p data-para><strong>1.5 地域与产品边界：</strong>本版本仅适用于澳大利亚和新西兰的线下餐饮、本地休闲、生活服务及适用的活动票券。涉及跨国服务、受监管金融产品、酒类在线销售、住宿/配送/网约车及其他特许行业，应签署专项附件并完成资质和税务评估后才能上架。</p>
+<h2 data-para id="agreement-section-2"><strong>第二章  商户准入、实名核验及账号管理</strong></h2>
+<p data-para>2.1 商户应具有在经营地依法销售商品或提供服务的资质，并按适用情况提供公司/商号信息、澳大利亚ABN/ACN或新西兰NZBN/公司注册资料、GST登记状况、门店地址、法定许可证及授权代表信息。未依法必须取得特定编号或GST登记的商户，应如实说明，不得仅因其不适用而被表述为违法。</p>
+<p data-para>2.2 商户提供的银行账户应为其合法控制的经营账户。银行账户变更应经过双因素或其他可靠核验；平台可在核验期间合理暂缓受影响的支付，但不得无理由冻结无关订单结算。</p>
+<p data-para>2.3 商户应为管理员及每名核销员工设置独立账号、最小权限及安全验证，不得共享登录凭证；员工变动、设备遗失或疑似账号被盗，应及时移除权限并通知平台。</p>
+<p data-para>2.4 平台可合理核验商户资质、行业许可证、商业真实性、交易风险和适用的反欺诈要求。如有拒绝入驻、限制发布等决定，应尽合理可能说明主要原因并提供复核渠道，依法不得披露的情况除外。</p>
+<h2 data-para id="agreement-section-3"><strong>第三章  商品上架、定价、有效期与宣传</strong></h2>
+<p data-para>3.1 商户须准确提交门店、地址、经营时间、产品内容、服务范围、供应数量、预约要求、适用日期、周末及公共假期限制、过敏原/年龄提示、不可叠加优惠、退款规则及依法允许的附加费。未经消费者事先明确看到的条件，不得在到店时单方增加。</p>
+<p data-para>3.2 商品价格与平台费：商户按合作约定提供含依法适用GST的商品售价，得闲按地区向消费者每笔订单收取独立的服务费（新西兰 NZD 1.00；澳大利亚 AUD 1.00）。该1元属于平台服务费，不属于商户商品对价，不计入商户佣金计算基础，且不随所选银行卡种类变化。消费者付款前必须清楚看到商品价款、固定服务费及依法要求显示的总价。</p>
+<p data-para>3.3 有效期设置：普通团购券默认自购买成功之日起365天；商户可以在商家版后台根据商品真实类别设置合法的具体期限，并保证购买前清楚展示。澳大利亚及新西兰对依法属于受保护礼品卡/礼品券的付费券，原则上要求不少于3年有效期，法定豁免除外；商户设定的短期限不得覆盖法定最短期限。特定场次门票等例外须按商品实质判断。</p>
+<p data-para>3.4 适用折扣、库存、门店范围和赠品须真实可实现，不得虚构原价、伪造销售量、操纵评价或作误导性宣传。平台有权在合理说明后要求修正、暂时下架或拒绝违规商品。</p>
+<p data-para>3.5 商户须对食品安全、过敏原提示、食品经营许可、酒类供售许可及适用年龄核验负责。若未完成当地许可核验，平台可禁止相关类别上架。</p>
+<h2 data-para id="agreement-section-4"><strong>第四章  核销、交付与消费者投诉</strong></h2>
+<p data-para><strong>4.1 有效核销与实际履约：</strong>只有消费者或其合法使用人持有效凭证，并且商户依商品描述实际提供相应商品或服务的核销，才构成参与结算的有效核销。系统扫描/核销状态并非商户已全面适当履约的决定性证据；严禁预核销、虚假核销、重复核销、未履约先核销或未经授权核销。</p>
+<p data-para><strong>4.2 核销方式：</strong>商家版可按实际功能支持二维码/条形码、人工凭证校验等；如日后正式开通NFC碰卡核销，另以已公布功能说明、兼容设备要求、令牌验证与防重放措施执行。在未开通前本协议不承诺NFC可用。商户不得存储完整卡片敏感信息或尝试读取无关卡内容。</p>
+<p data-para><strong>4.3 异常处理：</strong>遇误扫、重复扫、未提供服务即核销、断网或设备故障，商户应即时记录订单编号、操作时间、员工账号与可用证据，并在商家版提交冲正/申诉。平台应保留审核记录，建立人工复核与防误判机制。</p>
+<p data-para><strong>4.4 投诉响应：</strong>商户应在收到平台转交的消费者投诉后2个工作日内初次回复，并及时提供核销及实际履约证据；涉及食品安全、人身安全、重大个人信息风险的，应立即配合处置。消费者依法享有的退款、修理、补救或赔偿权利不因券显示“已核销”而消失。</p>
+<p data-para>4.5 商户营业变更、停业或无法履约，应及时通知平台及受影响消费者，提供合法合理的改期、替代或退款方案；未经消费者同意，不得以强制改期或钱包退款取代法定救济。</p>
+<h2 data-para id="agreement-section-5"><strong>第五章  资金流、佣金、GST及结算</strong></h2>
+<p data-para>5.1 收款与资金流：消费者端的销售/统一收款主体为 Euphonic Horizon Media Co., Limited；平台方通过实际使用的第三方支付服务商（包括已启用的Airwallex渠道）收款，再直接向商户指定且经验证的经营银行账户支付应结款。当地合作方未经正式另行签约或书面授权，不参与商户订单款的代收、代付。双方保留可审计的订单、核销、退款、对账及付款记录。</p>
+<p data-para><strong>5.2 结算金额口径：</strong>可结算金额以真实完成履约的有效核销商品对价为基础，加上双方约定应计入商户结算的平台补贴，扣除已确认佣金、商户承担的优惠及双方书面约定的其他合法项目。消费者每单独立支付的 NZD 1.00/AUD 1.00 平台服务费不属于商户商品款，也不计入佣金基数。佣金是否含GST、适用税额、收款/开票方和相关跨境费用须在《商务确认单》中明确，不能仅凭“佣金15%”推定税务方式。</p>
+<p data-para>5.3 核销后方进入待结算状态。具体结算频率、结算截止日、付款日及跨境转账费用承担以《商务确认单》为准。平台应提供订单编号、销售日、核销日、商品对价、优惠承担、佣金、适用税费、退款抵扣、已付和待付余额的电子对账单。</p>
+<p data-para>5.4 对账异议：商户可自收到结算单之日起10个工作日内提出书面异议，附订单及核销证据；平台收到必要材料后原则上在10个工作日内初次答复并及时推进复核。逾期不影响明显计算错误、欺诈或法定不可排除的权利；争议金额应与无争议款项分开处理。</p>
+<p data-para><strong>5.5 税务：</strong>双方分别履行各自适用的税务登记、申报及开具合规税务凭证义务；商品页面“含GST”不等于所有主体均已完成GST登记或同一交易可以由多方重复开票。针对香港公司作为卖券方、当地商户供货方及佣金/平台服务费的税务性质，双方应依据澳大利亚GST、新西兰GST及适用的电商市场规则核实并在确认单指定开票主体；涉及住宿、配送、网约车等NZ列明服务，另行评估市场平台的法定GST义务。</p>
+<p data-para>5.6 如出现支付渠道限制、异常退款或合理怀疑的欺诈，平台仅可按需要暂缓有争议的部分结算，并及时书面告知范围、原因、所需材料及复核方式；无争议款项照常支付。法律或支付渠道强制要求保密的除外。</p>
+<h2 data-para id="agreement-section-6"><strong>第六章  退款、拒付、过期券及官方补贴</strong></h2>
+<p data-para>6.1 消费者依法享有的退款与补救权利优先，已核销不当然视作“不可退”。依法应全额退款时，平台按《得闲 App 用户服务协议》退还依法应退的商品价款及相关必付平台服务费；不得因自身已承担的收单成本、支付机构退款处理费或对商户已结算而从消费者法定应退金额中扣减。独立发卡银行向消费者收取的国际交易费、兑换费用及汇率差额按第6.2条处理。因商户原因拒绝履约、服务重大不符、误核销或严重质量缺陷产生的退款及可依法、依约归责的直接损失，由双方依据原因与证据分担；内部追偿不得延误消费者应获的法定退款，也不得无依据将平台服务费冲抵商户佣金。</p>
+<p data-para>6.2 退款路径、独立银行收费与自愿退款：平台不额外向消费者收取退款手续费或退款管理费。消费者可在实际开放且合法的途径中自愿选择退款路径；钱包退款仅在依法上线后提供。平台向支付渠道发起的退款金额与消费者银行实际入账金额可能因独立金融机构的收费或汇率变化而不同；消费者的银行、发卡机构依其与消费者的协议另行收取的国际交易费、汇兑费或汇率差额，不视为平台扣费。平台不保证此类独立费用退还，亦不当然负担，但法律另有规定，或因平台违法、误导等应负责任的除外。消费者自行取消并按额外自愿退款政策申请退款时，仅可按购买前和退款确认前清楚披露、依法允许且公平的规则处理实际第三方退款费用；平台通常的收单成本不得当然转嫁消费者。平台与商户间的真实支付、退款及转账费用分担，仅按《商务确认单》及适用法律处理，不当然由消费者承担。</p>
+<p data-para>6.3 对已结算商品，若因商户可归责的原因产生有依据的退款、拒付或赔付，平台可在提供订单、原因、证据及计算明细后从后续应结款中抵扣；商户可申请复核。若因平台系统、平台补贴政策、平台错单或平台承诺产生的费用，不得无约定转嫁给商户。争议中的扣款应尽量限于争议金额。</p>
+<p data-para><strong>6.4 银行拒付：</strong>商户应于收到通知后5个工作日内或在支付机构设定的更短合规期限内提供履约证据。平台将合理协助申诉，不保证银行裁决结果。追回后的分配及真实损失分担须按责任原因和确认单执行。</p>
+<p data-para><strong>6.5 到期与自动退款：</strong>只有商品详情页已明确承诺“到期自动退”且符合所列条件的未核销订单，才按该承诺自动退；其他团购券按购买前公示的合法期限、退改政策及适用法律处理。不应概括承诺所有过期券自动退款或自动作废，也不得缩短受礼品卡最低有效期保护的券。</p>
+<p data-para>6.6 平台官方营销补贴由平台承担，除双方另行书面同意外不冲减商户正常应结款；如商户参与联合补贴，须在活动开始前明确预算上限、承担比例、核销口径及活动结束对账方式。</p>
+<h2 data-para id="agreement-section-7"><strong>第七章  用户数据、隐私与信息安全</strong></h2>
+<p data-para>7.1 商户仅可将来自得闲的消费者订单、券码、预约联系方式及核销信息用于该订单履约、售后及法律要求的必要事项；不得擅自转入私域社群、营销名单、AI训练素材，亦不得销售或向非必要第三方提供。独立取得消费者有效同意并另行满足澳新电子营销法要求的除外。</p>
+<p data-para>7.2 商户负责授权员工的保密、独立账号、设备锁屏、最小权限、日志留存及离职权限回收；不得利用个人聊天软件转发完整订单个人信息。与平台或本地代理之间的跨境访问应按照隐私政策及适用法律安排。</p>
+<p data-para>7.3 商户发现或怀疑消费者信息、账号或设备发生安全事件，应尽快止损，并在知悉后24小时内向平台安全联络渠道报告事件概要、受影响数据及补救措施。此24小时系双方协作要求，不代替澳新各自法定监管通知规则。</p>
+<p data-para>7.4 消费者对个人信息的访问、更正、删除、投诉等请求，商户应在3个工作日内转交平台并协助处理；商户若独立决定某项数据处理目的，则仍对其自身法定义务承担责任。</p>
+<p data-para>7.5 《得闲商家版隐私政策》独立说明经营者、商户管理员、员工和核销员等个人信息的收集、共享、跨境处理与删除；消费者个人信息由平台《得闲隐私政策》另行说明。商户仅可访问履约所必需的消费者订单资料；双方通过实际公示的联系渠道处理隐私请求。</p>
+<h2 data-para id="agreement-section-8"><strong>第八章  商户品牌授权、保密与知识产权</strong></h2>
+<p data-para>8.1 合作期间商户非独占、免许可费授权平台及其经授权的地区服务方在商品页面、门店目录与平台促销中合理展示商号、商标、门店照片和商户提供的商品素材。超出正常平台推广范围的品牌联名或投放可另行取得许可。</p>
+<p data-para>8.2 商户保证上传内容真实、拥有使用权且不侵犯第三方权益；双方各自保留既有商标、技术和商业资料的知识产权。得闲软件、源代码、核销算法、系统数据库及商家版界面等归权利人所有，商户不得擅自逆向工程、转售系统或复制平台核心资料。</p>
+<p data-para>8.3 双方对非公开佣金、对账明细、经营策略、用户数据及安全措施负保密义务；法定披露、已合法公开信息及向负保密义务的专业顾问披露除外。保密义务在终止后3年有效，个人信息义务按法律及实际保存期限持续。</p>
+<h2 data-para id="agreement-section-9"><strong>第九章  违规处理、合理审查及责任分配</strong></h2>
+<p data-para>9.1 对有证据的刷单、虚假核销、非法商品、严重安全事故、身份冒用、数据滥用等，平台可按风险轻重采取要求整改、暂停特定商品、临时限制核销或必要的结算暂缓；除紧急危险、依法保密或无法联系外，应说明理由并提供申诉及合理纠正机会。</p>
+<p data-para>9.2 双方因违约应承担依法证明的直接、合理、可预见损失；任何赔偿、抵扣或违约费用须与实际责任和合理成本相称，避免一方可单方面任意决定全部损失。不得排除法律不能排除的消费者保护、欺诈、故意不当行为或人身伤害责任。</p>
+<p data-para>9.3 就一般商业违约，双方可依确认单协商合理责任上限；与未付结算款、故意欺诈、严重数据泄露或依法不可排除责任有关的事项不适用不合理的统一限额。任何一方不得凭本条免除自身法定义务。</p>
+<h2 data-para id="agreement-section-10"><strong>第十章  协议期限、变更、退出与存量券</strong></h2>
+<p data-para>10.1 本协议自双方签署商务确认单或合法完成电子签约之日起生效，持续至依法或依约终止。一般终止可提前30日书面通知；严重违法、欺诈、消费者安全风险等可依法即时终止并记录原因。</p>
+<p data-para>10.2 调整基础条款应提前至少30日通过可保存的电子通知告知；对已成交订单与已核销佣金不溯及既往；对佣金、结算天数等重大商业变化，应经双方另行明确确认，否则仍依原商务确认单执行。</p>
+<p data-para>10.3 停止合作前，双方应妥善处理已经售出但未履约的券、消费者退款、待决投诉、账目清算及法定记录。商户若不能继续提供服务，应及时告知平台以便依法退款、替代履约或其他补救。不得仅以合同终止作为拒绝消费者法定权益的理由。</p>
+<p data-para>10.4 结束经营合作与个人账号删除须区分处理：商户负责人可通过商家版的现有经营账户管理入口或官方客服申请结束合作；管理员及核销员可通过商家版已上线的个人账号删除入口或官方公开账户删除网页提出请求。未结算货款、存量券、核销争议和依法保留的税务记录按本合同及隐私政策处理，不应无期限阻止个人提出删除申请。</p>
+<h2 data-para id="agreement-section-11"><strong>第十一章  争议解决与一般条款</strong></h2>
+<p data-para>11.1 商户在澳大利亚经营的合作事项以澳大利亚适用法律（包括相关州或领地的强制性规定）为准；在新西兰经营的合作事项以新西兰适用法律为准。具体法院或争议解决机构在商务确认单中合理约定，但不得排除适用的强制性管辖、标准格式合同公平性保护及可诉权。</p>
+<p data-para>11.2 争议先由双方书面协商至少15个工作日；协商未果可自愿调解，紧急禁令、保全和依法不得限制的救济除外。任何一方均可寻求法律允许的法院或机构救济。</p>
+<p data-para>11.3 商务确认单、本协议、双方书面签署的专项附件构成完整B2B合作文件。无效条款不影响其他可执行条款；平台延迟行权不构成放弃。电子签名、可验证点击确认与完整签约日志在适用法律允许范围内有效。</p>
+<h2 data-para id="agreement-section-12"><strong>附录A    澳新差异与法定权利</strong></h2>
+<p data-para>A1 澳大利亚：商户经营须遵守Australian Consumer Law、州/领地食品及行业监管规则；适用礼品卡一般最低3年规定与法定例外。自2026年10月1日起，Visa、Mastercard、American Express及eftpos银行卡支付不得另加银行卡支付附加费；商品价格、消费者固定平台费及门店依法允许的其他费用应真实、透明、不得换名规避禁令。</p>
+<p data-para>A2 新西兰：经营须遵守Consumer Guarantees Act 1993、Fair Trading Act 1986及行业规定。对依法属于礼品卡范围且在2026年3月16日后售出的适用券，按最低3年有效期要求执行；部分商品券可能具有不同法律分类。平台发行券不当然免除当地供应商的消费者保证责任。</p>
+<p data-para>A3 两地的小商户标准格式合同均有公平条款要求：终止、费率调整、结算暂停、损失追偿、单方权利应有合理条件、通知、复核和相称性。跨境税务与MoR法律定性应由当地专业人士按实际供应链及收付款明细确认。</p>
+<footer><a href="#agreement">返回顶部</a></footer>
+</article>
+<article id="privacy" aria-labelledby="privacy-title" tabindex="-1">
+<h1 data-para id="privacy-title"><strong>得闲商家版隐私政策</strong></h1>
+<p data-para lang="en" class="subtitle">Dexian Merchant App Privacy Policy</p>
+<a class="quick" lang="en" href="#privacy-section-16">Read in English</a>
+<p data-para>本政策的实际生效日期以得闲商家版已发布的隐私政策页面为准。适用于商户经营者（包括自然人商户）、代表人、管理员、核销员及其他授权员工使用得闲商家版 App 或商户后台时产生的个人信息。独立的《得闲隐私政策》适用于得闲消费者端普通用户；本政策不取代消费者端用户协议、商户B2B合同或普通用户隐私政策。</p>
+<details><summary>章节目录</summary><ul class="toc-links"><li><a href="#privacy-section-1">1. 我们是谁及如何联系我们</a></li>
+<li><a href="#privacy-section-2">2. 我们处理哪些个人信息</a></li>
+<li><a href="#privacy-section-3">3. 间接收集与员工告知</a></li>
+<li><a href="#privacy-section-4">4. 为什么处理信息</a></li>
+<li><a href="#privacy-section-5">5. 相机、相册、位置、通知和NFC</a></li>
+<li><a href="#privacy-section-6">6. 与谁共享或披露个人信息</a></li>
+<li><a href="#privacy-section-7">7. 跨境存储与披露</a></li>
+<li><a href="#privacy-section-8">8. 保留期限、删除和安全</a></li>
+<li><a href="#privacy-section-9">9. 访问、更正、选择与投诉</a></li>
+<li><a href="#privacy-section-10">10. 注销商户账户与删除个人账户</a></li>
+<li><a href="#privacy-section-11">11. 数据泄露与应急响应</a></li>
+<li><a href="#privacy-section-12">12. 儿童及使用者身份</a></li>
+<li><a href="#privacy-section-13">13. 应用商店信息与SDK披露</a></li>
+<li><a href="#privacy-section-14">14. 政策修订</a></li>
+<li><a href="#privacy-section-15">15. 联系及外部投诉</a></li>
+<li><a href="#privacy-section-16">English Privacy Policy | Publication-ready structure</a></li></ul></details>
+<h2 data-para id="privacy-section-1"><strong>1. 我们是谁及如何联系我们</strong></h2>
+<p data-para><strong>1.1 运营及个人信息管理主体：</strong>Euphonic Horizon Media Co., Limited（中国香港，“得闲”“我们”）。香港公司的注册资料及联络地址以得闲商家版现有公开“关于得闲”信息和正式商户合同附件所示资料为准。澳大利亚、新西兰经授权合作方仅在实际承担商户支持任务所必需的范围内处理个人信息；如另行成为独立处理主体，会依法明确其身份及用途。</p>
+<p data-para><strong>1.2 客服、隐私与删除请求统一联系邮箱：</strong><a href="mailto:contact.dexian@gmail.com">contact.dexian@gmail.com</a>。您也可通过商家版已上线的隐私、帮助或账号删除入口及官方公开网页提出申请；公开隐私政策及个人账号删除网页以 App 当前展示的官方链接为准。无需另行注册才能阅读公开政策。</p>
+<h2 data-para id="privacy-section-2"><strong>2. 我们处理哪些个人信息</strong></h2>
+<div class="table-scroll" role="region" aria-labelledby="privacy-section-2" tabindex="0"><table aria-labelledby="privacy-section-2"><colgroup><col style="width:18.84%"><col style="width:44.93%"><col style="width:36.23%"></colgroup><thead><tr><th scope="col"><p data-para><strong>数据类别</strong></p></th><th scope="col"><p data-para><strong>具体数据及主要来源</strong></p></th><th scope="col"><p data-para><strong>目的/必要性</strong></p></th></tr></thead><tbody><tr><td><p data-para>经营身份/认证</p></td><td><p data-para>商户负责人姓名、企业联系邮箱/电话、职务、授权书或核验所需证件；来自本人或商户管理员。</p></td><td><p data-para>身份核验、权限与反欺诈；适用时为必需</p></td></tr><tr><td><p data-para>管理员/核销员工</p></td><td><p data-para>员工姓名或昵称、工作邮箱/电话、角色权限、登录凭证标识；由本人或商户管理员创建。</p></td><td><p data-para>提供角色账号及操作责任追溯</p></td></tr><tr><td><p data-para>结算联系人</p></td><td><p data-para>结算经办人姓名、工作联系信息、银行账户经办资料；由商户提交。</p></td><td><p data-para>对账、打款、异常核对</p></td></tr><tr><td><p data-para>门店/业务信息</p></td><td><p data-para>门店地址、电话、经营时间、上传图片；可含个人经营者资料。</p></td><td><p data-para>商户展示、联系及订单履约</p></td></tr><tr><td><p data-para>订单/核销事件</p></td><td><p data-para>订单编号、券码令牌状态、核销时间、员工账号、处理状态及必要消费者联系信息。</p></td><td><p data-para>防重复核销、服务履约、争议处理</p></td></tr><tr><td><p data-para>设备/技术日志</p></td><td><p data-para>IP、设备型号/OS、应用版本、登录时间、安全/崩溃日志、推送令牌；使用中自动生成。</p></td><td><p data-para>安全、故障修复、反滥用</p></td></tr><tr><td><p data-para>客服/申诉</p></td><td><p data-para>服务请求、聊天记录、附件和必要证据；本人主动提供。</p></td><td><p data-para>客服、履约与争议调查</p></td></tr></tbody></table></div>
+<p data-para></p>
+<p data-para>2.1 我们不会为了普通商户核销而要求采集完整银行卡号、银行卡安全码、用户健康史、宗教等无关敏感资料。若因法定KYC/安全要求确需处理敏感身份文件，将在实际收集界面作额外说明、采取更严格访问控制及合法留存安排。</p>
+<h2 data-para id="privacy-section-3"><strong>3. 间接收集与员工告知</strong></h2>
+<p data-para>商户管理员可能为员工批量创建账号并提供姓名、工作邮箱、权限。平台将通过首次登录通知、独立收集说明或其他合理方式向相关员工告知数据来源、目的、接收方、持有机构名称与地址及访问/更正权；新西兰适用Privacy Act 2020的信息隐私原则3A（如有法定例外则从其规定）。商户也应向被授权人员提供必要的劳动场所信息通知。</p>
+<h2 data-para id="privacy-section-4"><strong>4. 为什么处理信息</strong></h2>
+<p data-para>4.1 提供商家版登录、商户验证、门店商品管理、扫码核销、订单及账单查询；核验授权和处理异常。</p>
+<p data-para>4.2 防范账号盗用、重复核销、虚假交易及支付争议；在实际发生退款、拒付或结算核查时，按必要范围处理订单号、支付渠道交易标识、退款发起金额及状态、交易沟通与核销证明等信息，以履行合同和适用税务、会计、监管义务。我们不因此收集消费者完整银行卡号。退款条件、平台退款金额与独立银行收费的承担规则，分别以《得闲 App 用户服务协议》《得闲商户入驻合作协议》及适用法律为准，本隐私政策不设立额外收费或保证银行退费。</p>
+<p data-para>4.3 发送服务必需的安全通知、交易提醒及系统维护信息。营销信息与产品推广须遵守当地电子营销法律；提供便利退订方式，不以取消营销为停止基础服务的条件。</p>
+<p data-para>4.4 处理个人信息用于产品分析、自动化风控或改进服务时，采用必要性、目的限制和合理的防护措施；对重大影响的自动化结果提供人工核查申请渠道。除非实际启用并按规则披露，不将本App描述为用于跨App广告追踪。</p>
+<h2 data-para id="privacy-section-5"><strong>5. 相机、相册、位置、通知和NFC</strong></h2>
+<div class="table-scroll" role="region" aria-labelledby="privacy-section-5" tabindex="0"><table aria-labelledby="privacy-section-5"><colgroup><col style="width:23.91%"><col style="width:45.65%"><col style="width:30.43%"></colgroup><thead><tr><th scope="col"><p data-para><strong>权限/技术</strong></p></th><th scope="col"><p data-para><strong>商家版的目的</strong></p></th><th scope="col"><p data-para><strong>拒绝后的替代</strong></p></th></tr></thead><tbody><tr><td><p data-para>相机（如启用）</p></td><td><p data-para>扫描消费者团购券二维码、拍摄门店及产品素材；仅用户操作时调用。</p></td><td><p data-para>可使用手动输入/其他已上线凭证验证路径（如存在）</p></td></tr><tr><td><p data-para>照片/媒体选择器（如启用）</p></td><td><p data-para>选择和上传店铺、菜单、资质图片；优先使用系统照片选择器。</p></td><td><p data-para>可不上传非必要照片；资质如为强制项，提供合适替代上传方式</p></td></tr><tr><td><p data-para>前台定位（如启用）</p></td><td><p data-para>辅助定位或校验门店地点；不为常态运行而追踪员工轨迹。</p></td><td><p data-para>允许手动填写门店地址</p></td></tr><tr><td><p data-para>推送（如启用）</p></td><td><p data-para>订单提醒、账户安全通知；按系统权限选择。</p></td><td><p data-para>在App内查看通知/订单</p></td></tr><tr><td><p data-para>NFC碰卡（未来功能）</p></td><td><p data-para>正式上线时，仅在用户主动发起核销时读取经批准的券令牌；并提示可用机型/系统限制。</p></td><td><p data-para>继续使用已上线的二维码核销</p></td></tr></tbody></table></div>
+<p data-para></p>
+<p data-para>5.1 商家版可能按实际功能调用相机扫描团购券二维码或上传门店照片、使用系统照片选择器、通过 Google Maps Platform 提供地图与地址搜索，并提供账户与订单提醒。是否申请系统定位、相机及通知权限取决于已启用功能与系统授权；非必要定位可使用人工录入门店地址的方式替代（如产品已提供）。NFC碰卡核销仅为后续可选功能，未上线前不表示商家版已经拥有该能力；NFC团购令牌核销不等同读取银行卡或Tap to Pay收单。</p>
+<h2 data-para id="privacy-section-6"><strong>6. 与谁共享或披露个人信息</strong></h2>
+<p data-para>在实际履约或后台服务所需范围内，信息可能由香港平台主体及经授权的澳新运营支持人员访问，并向提供相关服务的支付/银行机构（包括已接入的Airwallex）、手机号验证和基础技术服务商、地图及地址搜索服务商、图片存储服务商、通知/安全服务商、合规专业顾问或依法有权的监管机构披露。商户员工只能取得履约所必需的消费者订单资料；我们不出售个人信息。</p>
+<p data-para>6.1 当前商家版使用的服务须按实际集成版本向用户及应用商店披露，包括：①Firebase（手机号码验证/认证：手机号、验证状态、技术与防滥用信息，按实际配置处理）；②Google Maps Platform（地图及门店地址搜索：输入的地址/搜索词、必要技术信息）；③Cloudflare R2（门店及商品图片上传/存储：上传文件和必要访问日志）；④Airwallex（支付结算相关必要商户资料和交易信息）。其他推送、崩溃或分析组件只在实际启用时列示。服务商是否独立处理、具体国家/地区及保存方式以最终SDK/服务配置和已发布的官方技术服务商清单为准，不得凭空推断。</p>
+<h2 data-para id="privacy-section-7"><strong>7. 跨境存储与披露</strong></h2>
+<p data-para>香港运营主体与澳大利亚、新西兰授权支持方可能因商户认证、订单、核销及结算需要对个人信息进行跨境访问。对跨境披露，我们按适用的澳大利亚APP 8、新西兰IPP 12及其他相关要求采取合理保障，包括最小化共享、合同约束、访问控制和安全审查；涉及特殊告知或同意情形时另行履行要求。</p>
+<p data-para><strong>7.1 目前明确的业务涉及中国香港总部、已接入的Airwallex、Firebase手机验证、Google Maps Platform地图/地址搜索及Cloudflare R2图片存储。服务商具体数据处理位置、云存储位置和其他已实际启用SDK，以运营后台配置及已公开的服务商列表为准；请勿误将商家版数据描述为“仅存于澳大利亚/新西兰”或“全部存于香港”。</strong></p>
+<h2 data-para id="privacy-section-8"><strong>8. 保留期限、删除和安全</strong></h2>
+<p data-para>我们仅在实现账户管理、订单核销、争议处理与法定义务所必要期间保留个人信息。涉及财务、税务和商业交易记录，依据实际适用法律要求保存（例如澳大利亚部分税务记录通常至少5年、新西兰部分税务记录通常至少7年，具体类别另核）。非财务员工权限记录在不再必要后合理期限内删除或去标识化；不得未经调查将全部数据一律承诺“注销后30日删除”。</p>
+<p data-para>我们采取与数据敏感性相称的传输保护、最小权限、身份验证、操作日志、备份及事件响应等合理技术与组织措施。绝对安全无法保证；发现异常访问可通过下列联系渠道报告。</p>
+<h2 data-para id="privacy-section-9"><strong>9. 访问、更正、选择与投诉</strong></h2>
+<p data-para>您可依法请求查询我们持有的个人信息、更正错误、撤回可撤回的同意、退订营销、提出隐私投诉，并在适用条件下请求删除。澳大利亚APP与新西兰隐私原则对删除权和响应期限的规定不完全相同；我们将依适用法律回复，必要时说明无法删除依法须留存记录的原因。新西兰的个人信息访问请求通常须在20个工作日内作出决定；澳大利亚我们通常力争30日内回应。</p>
+<h2 data-para id="privacy-section-10"><strong>10. 注销商户账户与删除个人账户</strong></h2>
+<p data-para>10.1 商户管理员、核销员及其他已开立个人账号的授权员工，可通过商家版现有个人账号删除入口或已上线的公开账号删除网页提出删除申请；商户负责人可按《得闲商户入驻合作协议》申请关闭商户经营账户。员工个人账号删除与商户经营合作终止是两类不同事项；即使须依法保留部分历史核销、税务或纠纷记录，也不应无期限保留不必要的个人登录权限。</p>
+<p data-para>10.2 得闲商家版已公布的官方账号删除网页与App内删除功能，提供相应申请方式及删除范围说明。为保持政策、应用商店申报和用户实际操作一致，公开页面链接以商家版当前展示及应用商店后台实际填写的网址为准；本文不另列未经确认的网址。</p>
+<p data-para>10.3 对已确认的个人账号删除请求，我们将及时处理并说明预期完成流程；不得以没有必要的身份步骤阻挠。商户经营账户需先处理在途订单、员工权限和未结算商品，但不妨碍个人用户提出删除请求。</p>
+<h2 data-para id="privacy-section-11"><strong>11. 数据泄露与应急响应</strong></h2>
+<p data-para>我们会调查疑似泄露并及时减少损害，依法向受影响人或监管机构通知。新西兰发生达到“严重伤害”标准的可通知隐私泄露时，应尽快通知，隐私专员办公室通常预期在确认后的约72小时内报告；澳大利亚符合Notifiable Data Breaches Scheme条件时，须进行及时评估，并按法律作出必要通知。商户向平台24小时报告是合同协同要求，并不替代平台/商户各自的法定义务。</p>
+<h2 data-para id="privacy-section-12"><strong>12. 儿童及使用者身份</strong></h2>
+<p data-para>得闲商家版面向经营主体及其获授权的工作使用者，不面向儿童推广。商户应确保员工使用符合当地雇佣和年龄要求；如发现非必要处理未成年人的个人信息，将评估并采取适当删除或限制措施。</p>
+<h2 data-para id="privacy-section-13"><strong>13. 应用商店信息与SDK披露</strong></h2>
+<p data-para>App Store Connect隐私标签、Google Play Data safety表单、App内首次权限解释和本隐私政策，应依据最终实际数据流与SDK版本保持一致。若有广告追踪、第三方账号登录、敏感权限、新增SDK或跨境披露变化，应在上线前重新审查相应披露及授权。实际商家版若未提供交易收款功能，不应误写“收集完整银行卡资料”。</p>
+<h2 data-para id="privacy-section-14"><strong>14. 政策修订</strong></h2>
+<p data-para>重大变更会通过商家版及适当渠道提示，并视法律要求取得适用同意；对曾收集的数据不以“继续使用即同意”代替法律要求的单独同意。公开页面保留版本及更新日期，并可提供历史版本。</p>
+<h2 data-para id="privacy-section-15"><strong>15. 联系及外部投诉</strong></h2>
+<p data-para>隐私、数据访问更正、个人账号删除及投诉统一邮箱：<a href="mailto:contact.dexian@gmail.com">contact.dexian@gmail.com</a>；也可通过商家版公开的隐私和账号删除入口提交。香港主体：Euphonic Horizon Media Co., Limited。澳大利亚监管机构：Office of the Australian Information Commissioner（oaic.gov.au）；新西兰监管机构：Office of the Privacy Commissioner（privacy.org.nz）。</p>
+<p data-para></p>
+<h2 data-para id="privacy-section-16" lang="en"><strong>English Privacy Policy | Publication-ready structure</strong></h2>
+<h3 data-para lang="en"><strong>1. Who we are and contact details</strong></h3>
+<p data-para lang="en">The Dexian Merchant App is operated by Euphonic Horizon Media Co., Limited (Hong Kong) (“Dexian”, “we”, “us”). Registration particulars and business contact address are provided through the current official About Dexian information and executed merchant documentation. Authorised local partners in Australia and New Zealand support merchants only within their assigned responsibilities. For privacy, account deletion and support requests, contact <a href="mailto:contact.dexian@gmail.com">contact.dexian@gmail.com</a> or use the live in-app and official public-web request channels.</p>
+<h3 data-para lang="en"><strong>2. Scope and personal information we collect</strong></h3>
+<p data-para lang="en">This notice applies to individual sole traders, merchant representatives, administrators, staff and voucher redemption operators using the Merchant App and related dashboard. We may handle: names, business contact details and authority evidence; merchant account identities, roles and permissions; settlement contacts; device, IP, login and diagnostic data; transaction, voucher redemption and support records; and the minimum customer information required to fulfil an order. We generally obtain this information from you, your merchant administrator, your use of the app or lawful verification sources. Full card numbers and security codes are not required for ordinary voucher redemption.</p>
+<h3 data-para lang="en"><strong>3. Indirect collection from merchant administrators</strong></h3>
+<p data-para lang="en">A merchant administrator may create staff accounts and provide their name, work contact details and permissions. We use first-login notices or other reasonable measures to tell affected staff about the collection, purposes, recipients, the agency holding the information and access and correction rights, including where New Zealand Information Privacy Principle 3A applies.</p>
+<h3 data-para lang="en"><strong>4. How and why we use information</strong></h3>
+<p data-para lang="en">We process personal information to authenticate merchants and staff, manage listings and vouchers, verify valid redemption, prepare settlement statements, support and investigate disputes, protect accounts, prevent fraud, maintain app functionality and meet applicable legal requirements. Optional marketing messages will comply with local electronic messaging rules and provide opt-out mechanisms. Material automated risk decisions may be reviewed through our support channel. Where a refund, chargeback or settlement review actually occurs, we may process necessary order references, payment-provider transaction identifiers, refund instruction amounts and statuses, correspondence and redemption evidence; we do not collect full customer payment-card numbers for this purpose. Refund entitlements, amounts initiated by the platform and any independent card-issuer or bank fees are governed by the Consumer Terms, Merchant Agreement and applicable law, not by this privacy policy; this notice does not impose a new fee or guarantee a third-party bank-fee refund.</p>
+<h3 data-para lang="en"><strong>5. Device permissions and optional NFC</strong></h3>
+<p data-para lang="en">Depending on features actually enabled, camera access supports QR voucher scanning and merchant image capture; photo selection supports store/product image uploads; Google Maps Platform supports map and business-address search; and notifications may support operational and account-security messages. System permissions are requested only as needed and may be withdrawn in device settings. Any future NFC voucher-reading feature will be described before launch and is not bank-card reading or Tap to Pay acceptance. Do not infer that unreleased NFC features are currently available.</p>
+<h3 data-para lang="en"><strong>6. Disclosures, providers and international transfers</strong></h3>
+<p data-para lang="en">For necessary operations we may share limited information with the Hong Kong operator, authorised Australian/New Zealand merchant-support partners, payment and banking providers (including Airwallex), and relevant technical providers. Currently used services include Firebase for phone verification/authentication, Google Maps Platform for maps and address search, and Cloudflare R2 for image uploads/storage. Depending on configuration, these may process phone numbers, authentication and technical logs, address search input, uploaded business images and necessary access data. Actual processing locations and other enabled SDKs are disclosed through the current official provider information; we do not invent server locations. Cross-border disclosure safeguards are applied as required under Australian APP 8 and New Zealand IPP 12. We do not sell personal information.</p>
+<h3 data-para lang="en"><strong>7. Security and retention</strong></h3>
+<p data-para lang="en">We use reasonable organisational and technical security measures such as appropriate access controls, authentication, secure transmission and logging. We retain information only as necessary for merchant services, settlement, disputes and applicable legal obligations. Certain Australian tax records may need to be held for at least five years and certain New Zealand tax records for at least seven years; exact retention depends on the record and law. Other personal data will be deleted or de-identified when no longer needed, subject to lawful exceptions.</p>
+<h3 data-para lang="en"><strong>8. Your rights and requests</strong></h3>
+<p data-para lang="en">You may request access to or correction of your personal information, make a privacy complaint, withdraw a consent where applicable, unsubscribe from marketing and request deletion where permitted. We will respond within applicable legal timeframes. In New Zealand, decisions on access requests are generally required within 20 working days; in Australia we generally aim to respond within 30 days. We may verify identity and explain any lawful retention requirements.</p>
+<h3 data-para lang="en"><strong>9. Account deletion and merchant closure</strong></h3>
+<p data-para lang="en">Merchant administrators, redemption operators and other authorised staff may request deletion of their individual login accounts using the current in-app account-deletion option or the official public account-deletion webpage. Closure of a merchant business account under the Merchant Agreement is a separate process and may require resolution of outstanding vouchers and settlements. Necessary tax, settlement, fraud-prevention or dispute records may remain for legally permitted retention periods, but unnecessary personal login access will not be kept active. The official public links are the ones currently displayed in the app and app-store listing, rather than unverified URLs repeated here.</p>
+<h3 data-para lang="en"><strong>10. Data incidents, children and changes</strong></h3>
+<p data-para lang="en">We investigate incidents, mitigate harm and notify affected people and authorities where required. In New Zealand, notifiable privacy breaches are reported as soon as practicable; the Privacy Commissioner generally expects reporting within around 72 hours after the notifiable threshold becomes known. In Australia, eligible data breaches are assessed and notified according to the Notifiable Data Breaches scheme. The Merchant App is intended for authorised business users, not children. Material changes to this notice will be communicated through appropriate channels.</p>
+<h3 data-para lang="en"><strong>11. Complaints and authority details</strong></h3>
+<p data-para lang="en">For privacy enquiries, access/correction requests, individual-account deletion and complaints, email <a href="mailto:contact.dexian@gmail.com">contact.dexian@gmail.com</a> or use the official published privacy/deletion channels. Operator: Euphonic Horizon Media Co., Limited (Hong Kong). You may also contact the Office of the Australian Information Commissioner (oaic.gov.au) or the Office of the New Zealand Privacy Commissioner (privacy.org.nz), as applicable. The effective date is shown on the published policy page.</p>
+<footer><a href="#privacy">返回顶部</a></footer>
+</article>
+</main>
+</body>
+</html>
